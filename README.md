@@ -1,7 +1,5 @@
 # 🎮 Java 2d Game with Swing
-This repository is a personal project where I'm learning game development by making a simple RPG 2D Game using  
-Java Swing. It's all about having fun while understanding how game work, how Java handles graphics, and how to omplement  
-basic mechanics.  
+This repository is a personal project where I'm learning game development by making a simple RPG 2D Game using Java Swing. It's all about having fun while understanding how game work, how Java handles graphics, and how to implement basic mechanics.  
 Special thanks to [RyiSnow](https://www.youtube.com/@RyiSnow) for the amazing tutorial: **"How to Make a 2d Game in Java."**  
 this project is heavily inspired by it!  
 
@@ -20,11 +18,11 @@ This project serves as a way for me to:
 - Understanding and applying how frame rate (FPS) works using Delta Time
 
 # 📝 Code Notes 
-This section contains **my personal notes and explanations** on syntax or what each line of code does. 
+This section contains **my personal notes and explanations** on syntax or what each line of code does.  
 ❗ Every line of code is commented to help explain what each part does -- feel free to read to read the 
-files to deeply understand how the code works. 
-
-
-
+files to deeply understand how the code works.❗  
+  
+  
+  
 
 ⚠️ This project is still under construction, and I’ll continue updating it as I add more features or learn new things.
