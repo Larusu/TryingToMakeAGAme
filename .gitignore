@@ -1,3 +1,6 @@
+# ignore all xml and class files
 *.class
 *.xml
+
+# ignore target folder because of repetitions
 /target/
