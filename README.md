@@ -1,7 +1,6 @@
 # 🎮 Java 2d Game with Swing
 This repository is a personal project where I'm learning game development by making a simple RPG 2D Game using Java Swing. It's all about having fun while understanding how game work, how Java handles graphics, and how to implement basic mechanics.  
-Special thanks to [RyiSnow](https://www.youtube.com/@RyiSnow) for the amazing tutorial: **"How to Make a 2d Game in Java."**  
-this project is heavily inspired by it!  
+Special thanks to [RyiSnow](https://www.youtube.com/@RyiSnow) for the amazing tutorial: **"How to Make a 2d Game in Java."** this project is heavily inspired by it!  
 
 # 💻 Project Overview
 This project serves as a way for me to:
