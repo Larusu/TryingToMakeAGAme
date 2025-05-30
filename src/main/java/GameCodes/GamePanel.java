@@ -3,6 +3,7 @@ package GameCodes;
 import javax.swing.JPanel;
 
 import GameCodes.entity.Player;
+import GameCodes.tile.TileManager;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -13,13 +14,13 @@ public class GamePanel extends JPanel implements Runnable{
 
     // SCREEN SETTINGS
     final int originalTileSize = 16; // 16 x 16 tile
-    final int scale = 3; 
+    final int scale = 3; // 🔤 to in
     public final int tileSize = originalTileSize * scale; // 🔤 Sets the actual tile size used in the game: 48 x 48 tile
 
-    final int maxScreenCol = 18;
-    final int maxScreenRow = 14; // 4 x 5 screen
-    final int screenWidth = tileSize * maxScreenCol; // 960 pixels
-    final int screenHeight = tileSize * maxScreenRow; // 768 pixels
+    public final int maxScreenCol = 18;
+    public final int maxScreenRow = 14; // 4 x 5 screen
+    public final int screenWidth = tileSize * maxScreenCol; // 960 pixels
+    public final int screenHeight = tileSize * maxScreenRow; // 768 pixels
 
     // FPS
     int FPS = 60;
@@ -27,6 +28,7 @@ public class GamePanel extends JPanel implements Runnable{
     KeyHandler keyH = new KeyHandler();
     Thread gameThread; // 🔤 Thread is something you can start and stop and once a thread started, 🎯 it keeps the program running
     Player player = new Player(this, keyH);
+    TileManager tileM = new TileManager(this);
 
     // Set Player's default position
     int playerX = 100;
@@ -101,6 +103,8 @@ public class GamePanel extends JPanel implements Runnable{
         super.paintComponent(g); // ⚠️ Required format to properly override paintComponent
 
         Graphics2D g2 = (Graphics2D)g; // 🔤 Changing "Graphics g" to 2D Graphics, 🎯 it has a bit more function that we can use later
+
+        tileM.draw(g2); // 🔤 Adding this before 'player' since this is the background; 🎯 first layer
 
         player.draw(g2);
 
