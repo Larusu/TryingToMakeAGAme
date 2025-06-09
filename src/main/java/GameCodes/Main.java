@@ -7,7 +7,7 @@ public class Main extends JFrame{
         Main display = new Main();
         display.setTitle("Gameerrsss");
         display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Properly close the display when user click "X" button
-        display. setResizable(false); // Display can not be resize
+        display.setResizable(false); // Display can not be resize
 
         GamePanel gamePanel = new GamePanel();
         display.add(gamePanel);
